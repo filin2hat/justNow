@@ -1,6 +1,9 @@
 fun main() {
-    val secondsAgo = 1000000
-    println(agoToText(secondsAgo))
+    var secondsAgo = 30
+    repeat(14) {
+        secondsAgo *=2
+        println(agoToText(secondsAgo))
+    }
 }
 
 fun agoToText(secondsAgo: Int): String = when (secondsAgo) {
