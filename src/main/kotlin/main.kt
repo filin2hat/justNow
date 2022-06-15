@@ -1,5 +1,5 @@
 fun main() {
-    val secondsAgo = 365
+    val secondsAgo = 1000000
     println(agoToText(secondsAgo))
 }
 
@@ -7,8 +7,8 @@ fun agoToText(secondsAgo: Int): String = when (secondsAgo) {
     in 0..60 -> "был(а) только что."
     in 61..3600 -> "был(а) ${minutesToText(secondsAgo)} назад."
     in 3601..86400 -> "был(а) ${hoursToString(secondsAgo)} назад."
-    in 86401..172800 -> "был(а) сегодня"
-    in 172801..259200 -> "был(а) вчера"
+    in 86401..172800 -> "был(а) сегодня."
+    in 172801..259200 -> "был(а) вчера."
     else -> "был(а) давно"
 }
 
