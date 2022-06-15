@@ -12,7 +12,7 @@ fun agoToText(secondsAgo: Int): String = when (secondsAgo) {
     in 3601..86400 -> "был(а) ${hoursToString(secondsAgo)} назад."
     in 86401..172800 -> "был(а) сегодня."
     in 172801..259200 -> "был(а) вчера."
-    else -> "был(а) давно"
+    else -> "был(а) давно."
 }
 
 fun minutesToText(seconds: Int): String {
